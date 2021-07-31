@@ -1,0 +1,183 @@
+/* Variables */
+:root{
+    --blue-color: #4D96A9;
+    --pinky-bg-color: #855FB1; 
+    --dark-letter-color: #28283D; 
+    --grey-letter-color: #87879D;
+    --blue-hover-color: #8FE3F9; 
+    --pink-hover-color: #D9B8FF; 
+    --white-letter-color:#FAFAFA;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; 
+    line-height: 26px;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 26px;
+    background-color: var(--white-letter-color);
+    color: var(--grey-letter-color);
+}
+
+h1{
+    font-size: 64px;
+    line-height: 64px;
+}
+h2{
+    font-size: 40px;
+    line-height: 44px;
+}
+h1, h2{
+    color: var(--dark-letter-color);
+}
+
+header{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+.meet-logo{
+margin: auto;
+width: 119px;
+height: 28px;
+}
+.header-intro{
+    width: 100%;
+    height: 358px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.header-left{
+    margin-left: -32px; 
+
+}
+.header-middle{
+    padding: 15px;
+}
+.header-right{
+    margin-right: -32px;
+    object-fit: contain;
+}
+button{
+    border:none;
+    text-decoration: none;
+    width: 193px;
+    height: 58px;
+    padding:10px;
+    border-radius: 29px;
+    color: var(--white-letter-color);
+    font-weight: 700;
+}
+
+.multiple-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img1, .img2, .img3, .img4{
+    width: 255px;
+    height: 242px;
+    background-size: contain;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.img1{
+    background-image: url(/assets/desktop/image-woman-in-videocall.jpg);
+}
+.img2{
+    background-image: url(/assets/desktop/image-women-videochatting.jpg);
+}
+.img3{
+    background-image: url(/assets/desktop/image-men-in-meeting.jpg);
+}
+
+.img4{
+    background-image: url(/assets/desktop/image-man-texting.jpg);
+}
+
+
+.middle{
+    width: 540px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.overline{
+    word-spacing: 4px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+
+.btn1, .btn2{
+    margin-right: 32px;
+}
+
+
+.btn1{
+    background-color: var(--blue-color);
+}
+
+.version1{
+    color: var(--blue-hover-color)
+}
+
+.btn1:hover{
+    background-color: var(--blue-hover-color);
+}
+.version1:hover{
+    color: var(--blue-color);
+}
+
+.btn2{
+    background-color: var(--pinky-bg-color);
+}
+
+.btn2:hover{
+    background-color: var(--pink-hover-color);
+}
+.version2{
+    color: var(--pink-hover-color);
+}
+
+.footer{
+    width: 100%;
+    min-height:100%;
+    background: url(/assets/desktop/image-footer.jpg), rgb(77, 150, 168);
+    background-size: cover;
+    background-blend-mode: multiply ;
+    color: var(--white-letter-color);
+    height: 308px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+#exp-more, #p-exp{
+    color: var(--white-letter-color);
+}
+
+#exp-more, #p-exp, #last-btn{
+    margin: 150px;
+}
+
+
