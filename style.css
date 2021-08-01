@@ -1,12 +1,14 @@
 /* Variables */
 :root{
-    --blue-color: #4D96A9;
-    --pinky-bg-color: #855FB1; 
-    --dark-letter-color: #28283D; 
-    --grey-letter-color: #87879D;
-    --blue-hover-color: #8FE3F9; 
-    --pink-hover-color: #D9B8FF; 
-    --white-letter-color:#FAFAFA;
+    --blue-color: hsl(192, 37%, 48%);
+    --blue-bg-color-opacity: hsla(192, 50%, 50%, 0.9);
+    --pinky-bg-color: hsl(268, 34%, 53%); 
+    --dark-letter-color: hsl(240, 21%, 20%); 
+    --grey-letter-color: hsl(240, 10%, 57%);
+    --grey-line-color: hsl(240, 10%, 80%);
+    --blue-hover-color: hsl(192, 90%, 77%); 
+    --pink-hover-color: hsl(268, 100%, 86%); 
+    --white-letter-color: hsl(0, 0%, 98%);
 }
 
 body{
@@ -106,7 +108,6 @@ button{
     background-image: url(/assets/desktop/image-man-texting.jpg);
 }
 
-
 .middle{
     width: 540px;
     height: 240px;
@@ -159,25 +160,73 @@ button{
 }
 
 .footer{
+    position:relative;
     width: 100%;
-    min-height:100%;
-    background: url(/assets/desktop/image-footer.jpg), rgb(77, 150, 168);
-    background-size: cover;
-    background-blend-mode: multiply ;
-    color: var(--white-letter-color);
     height: 308px;
+    background: url("/assets/desktop/image-footer.jpg") center no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;    
 }
 
-#exp-more, #p-exp{
-    color: var(--white-letter-color);
+.footer::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-bg-color-opacity);
+
 }
 
 #exp-more, #p-exp, #last-btn{
-    margin: 150px;
+    position: relative;
+    margin-right: 90px;
+}
+
+#exp-more, #p-exp{
+    color: var(--white-letter-color);
+    padding: 50px;
 }
 
 
+.item-line{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-line, .round{
+    border: 1px solid var(--grey-letter-color);
+}
+.vertical-line{
+    height: 50px;
+    
+}
+
+
+.round{
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+@media screen and (max-width: 767px){
+
+}
