@@ -1,3 +1,0 @@
-=> change colors to rgba (for lines)
-
-=>>> media queries bitch
