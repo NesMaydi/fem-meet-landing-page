@@ -202,16 +202,16 @@ p{
 }
 
 .img1{
-    background-image: url(assets/desktop/image-woman-in-videocall.jpg);
+    background-image: url(./assets/desktop/image-woman-in-videocall.jpg);
 }
 .img2{
-    background-image: url(assets/desktop/image-women-videochatting.jpg);
+    background-image: url(./assets/desktop/image-women-videochatting.jpg);
 }
 .img3{
-    background-image: url(assets/desktop/image-men-in-meeting.jpg);
+    background-image: url(./assets/desktop/image-men-in-meeting.jpg);
 }
 .img4{
-    background-image: url(assets/desktop/image-man-texting.jpg);
+    background-image: url(./assets/desktop/image-man-texting.jpg);
 }
 
 @media screen and (min-width: 1024px){
