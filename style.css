@@ -140,32 +140,45 @@ button{
     width: 414px;
     height: 153px;
 }
-
 #img-hero-left-tablet-mobile{
     position: relative;
-    right: 10px;
+    right: 22px;
 }
 #img-hero-right-tablet-mobile{
     position: relative;
-    left: 10px;
+    left: 6px;
 }
-.header-middle{
+.header-middle > h1, p{
     flex-direction: column;
+    width: 327px;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
 }
 
 h1{
     font-size: 40px; 
 }
 p{
-    width: 327px;
     font-size: 16px;
     line-height: 26px;
 }
 
-.btn1, .btn2{
-    margin-bottom: 10px;
+.btn1 {
+    
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
+.btn2{
+    position: relative;
+    top: 30px;
+    left: 12px;
 }
+
+
+}
+
 
 
 /* MULTIPLE IMAGES */
@@ -219,7 +232,7 @@ p{
         }
         .img1, .img2, .img3, .img4{
             width: 164px;
-            height: 1560px;
+            height: 156px;
             margin-right: 20px;
         }
 }
@@ -276,14 +289,12 @@ p{
     }
 }
 
-
 .btn1, .btn2{
     margin-right: 32px;
 }
 .btn1, #last-btn{
     width: 193px;
 }
-
 .btn1{
     background-color: var(--blue-color);
 }
@@ -302,14 +313,12 @@ p{
     background-color: var(--pinky-bg-color);
     width: 139px;
 }
-
 .btn2:hover{
     background-color: var(--pink-hover-color);
 }
 .version2{
     color: var(--pink-hover-color);
 }
-
 .btn2:hover > .version2{
     color: var(--pink-version-hover-color);
 }
@@ -335,16 +344,41 @@ p{
     background-color: var(--blue-bg-color-opacity);
 
 }
-
 #exp-more, #p-exp, #last-btn{
     position: relative;
     margin-right: 90px;
 }
-
 #exp-more, #p-exp{
     color: var(--white-letter-color);
     padding: 50px;
 }
+@media screen and (min-width: 1024px){
+    
+    
+    #exp-more, #p-exp, #last-btn{
+        margin-right: 0;
+        padding: 0;
+    }
+    
+    #exp-more{
+        width: 350px ;
+        height: 88px;
+        font-size: 40px;}
+
+
+        #p-exp{
+            width: 350px;
+            height: 78px;
+            font-size: 18px;
+            margin: auto 20px;
+        }
+
+    #last-btn{
+        width: 193px;
+
+    }
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .footer{
@@ -360,8 +394,17 @@ p{
         padding: 20px;
     }
 
-}
+    #exp-more{
+        width: 462px;
+    }
 
+    #p-exp{
+        width: 575px;
+        padding-bottom: 20px;
+    
+    }
+
+}
 @media screen and (min-width: 320px) and (max-width: 425px){
     .footer{
         height: 428px;
@@ -373,10 +416,21 @@ p{
         padding: 0;
     }
     #exp-more, #p-exp{
-        padding: 20px;
-}
+        padding: 20px;}
 
-/* round lines :) */
+        #exp-more{
+            width: 327px;
+            height: 78px;
+            font-weight: 900;
+            font-size: 32px;
+        }
+
+    #p-exp{
+        font-size: 18px;
+        width: 327px;
+        height: 78px;
+    }
+}
 .item-line{
     width: 100%;
     display: flex;
@@ -404,4 +458,21 @@ p{
     position: relative;
     top: 62px;
     z-index: 10;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #first-line{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .round > p{
+        width: 21px;
+        margin: 16px auto;
+    }
+
+    #first-line{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
 }
